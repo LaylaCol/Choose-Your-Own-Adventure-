@@ -3,13 +3,11 @@
 #Sprint 1:
 - [x] Post project idea in Teams shared spreasheet
 - [x] Join KSU-IS Github
-- [x] Create code repository in KSU-IS
-- [x] create README.md file
-- [x] create projectroadmap.md file
-- [x] give each team member owner or maintainer role
-- [x] find related existing repository on Github and clone it to repository
-- [x] evaluate related repository
-- [x] create a seperate coding repository in Github
+- [x] Search for repositories related to my project idea
+- [x] Fork repository in KSU-IS
+- [x] Edit README.md file
+- [x] Edit projectroadmap.md file
+- [x] Review and run code to see if viable
 
 #Sprint 2:
 - [x] Begin Coding
