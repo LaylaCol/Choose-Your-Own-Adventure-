@@ -1,48 +1,43 @@
 name = input ("Type Your name: ")
 print(
-"""                                                                                 
-                                                                       '.-'._____.'-.'
-                                                                        /\_\_  _/_/\
-                                                                       / / @ \/ @ \ \
-                                                                       \ \___/\___/ /
-                                                                        \____\/____/
-       +-----------------------------------------------+         ___ ____/:     :\____ ___
-       |Welcome", name, "to this adventure             |       .'          \   /          '.
-       |You are playing as Scrappy the Owl on his way  |      /             -.-             \
-       |to his first day of Dr. Thomas Application     |     /          +-| |---/ /+        '\  
-       |Development class at Kennesaw State University.|    |           | | |--/ /-|          |
-       |But Georgia traffic is backed up. So you will  |   (     /' .   | | | / /     .'\   '.)
-       |have to trek the rest of the way on foot.      |   /   _/   ".  +-| | \ \--+ ."  \_. '\
-       |       You 100 minutes to get to class.        |  |    |      ".+-| |--\ \ |"     |'.  |
-       |               Good Luck!                      |  |    |       ||-| |---\ \|      | :  |
-       +-----------------------------------------------+   \   |       |_____._____|      | : /
+"""                                                                                                                                               
+       +--------------------------------------------------+        
+       |Welcome", name, "to this adventure                |      
+       |You are playing as Alice from Alice in Wonderland.|     
+       |She needs to get back to her original size,       |      
+       |but the mysterious cat says she needs to take a   |   
+       |specific blue potion found in a house deep in the |  
+       |woods. You have 100 minutes to take the correct   |  
+       |      potion or else she'll be stuck forever.     | 
+       |               Good Luck!                      |  
+       +-----------------------------------------------+ 
                                                            """)
 time = 100
 while True:
-    q1 =input("You are on a dirt road, it has come to an end and you can go left or right. Which way would you like to go?:(left/right)")
+    q1 =input("You wake up on a dirt road. Which way would you like to go?:(left/right)")
     if q1.lower() == "left":
-        q11 = input("You come to a river, you can walk around it or swim across it:(swim/walk)")
-        if q11.lower() == "swim":
-            q12 = ("You see an alligator swimming directly at you. Do you fight or keep swimminng:(fight/swim)")
+        q11 = input("You come across an odd creature stopping your path. A small dragon but it has dragonfly wings like the insect, you can walk around it or swat it out your way:(swat/walk)")
+        if q11.lower() == "swat":
+            q12 = ("The dragonfly wakes up in a fuss. Do you fight or keep still:(fight/still)")
             if q12.lower() == 'fight':
                 time -= 25
-                print('You manage to fend off the alligator, but not without taking some damage.')
+                print('You manage to fend off the dragonfly, but not without taking some damage.')
                 break
-            elif q12.lower() == 'swim':
-                print('You try to swim faster but the alligator is too fast for you in the water. he takes a big bite out of your leg before you reach the other side.')
+            elif q12.lower() == 'still':
+                print('You try to keep still and act like it was not you but the dragonfly knows it was. he takes a big bite out of your leg before you reach the other side.')
                 time -=22
                 break
             else:
                 print("error")
         elif q11.lower() == "walk":
-            q13 = input("A badger growls at you and looks prone to fight. Do you fight or runaway?")
-            if q13.lower() == 'fight':
+            q13 = input("A caterpillar smoking on a mushroom makes eye contact with you. Do you approach it or ignore?")
+            if q13.lower() == 'ignore':
                 time -=25
-                print('You take some nasty hits from a ferocious beast, but eventually it retreats back to its lair')
+                print('The smoke you walk through makes you sluggish and move slower, but you are on the right path.')
                 break
-            elif q13.lower() == 'run':
+            elif q13.lower() == 'approach':
                 time -=10
-                print('Good choice! fighting an animal like that would be suicide!')
+                print('Good choice! The caterpillar knows a shortcut and tells you the route.')
                 break
             else:
                 print("error")
@@ -51,27 +46,27 @@ while True:
     elif q1.lower() == "right":
         q14 = input('You come across a large mountain. Do you go over or around:(over/around)')
         if q14.lower() == 'over':
-            q15 = input('As you climb, you encounter upon a bunch of goats that inhabit this mountain. Do you want to pet the goat?(yes/no)')
+            q15 = input('As you climb, you encounter a sleeping boar of sorts. Do you want to appraoch it?(yes/no)')
             if q15.lower() == 'yes':
                 time -=10
-                print('You have made a new friend! You are very careful when aproaching and the goat decides not to buck you off the mountain. It has such soft fur!')
+                print('You have made a new friend! You are very careful when aproaching and the boar decides not to eat you for lunch. It has such soft fur!')
                 break
             elif q15.lower() == 'no':
                 time -=27
-                print('taking a long climb over the mountain to get away from the goats has made the expedition harder. You notice you are quite exhausted because of it. But you must move on.')
+                print('taking a long climb over the mountain to get away from the boar has made the expedition harder. You notice you are quite exhausted because of it. But you must move on.')
                 break
             else:
                 print("error")
                 
         elif q14.lower() == 'around':
-            q16 = input('Oh my god! Its a grizzly bear! Do you try to intimidate it or do you want to fight?(intimidate/fight)')
+            q16 = input('Oh my god! What a strangely large lizard! Do you try to intimidate it or do you want to fight?(intimidate/fight)')
             if q16.lower() == 'fight':
                 time-=20
-                print('you manage to find a stick and impale the bear in the chest. The bear bleeds out.')
+                print('you manage to find a stick and impale the lizard in the chest. The lizard bleeds out.')
                 break
             elif q16.lower() == 'intimidate':
                 time-=26
-                print('big mistake. The bear swipes at you twice. Do you continue to fight or do you try to run away(stay/run)')
+                print('big mistake. The lizard snaps at you twice. Do you continue to fight or do you try to run away(stay/run)')
                 break
             else:
                 print("error")
@@ -83,13 +78,13 @@ while True:
                       
 def time_check():
     if time > 9:
-            game_over = print("You made it to class with time to spare! Thank you for playing!")
+            game_over = print("You drank the potion with time to spare! Thank you for playing!")
             quit()
     elif time < 1:
-            game_over = print("You are out of time, " + name + ". You are late to your class.")
+            game_over = print("You are out of time, " + name + ". Alice is doomed to be like this forever...")
             quit()
     else:
-            game_over = print("You made it just in time! Next time, try to not cut it so close ;)")
+            game_over = print("You made it just in time! Next time, dont be so curious. You know the saying, curiosity killed the cat!")
             quit()  
                       
                       
