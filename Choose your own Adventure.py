@@ -89,26 +89,26 @@ def time_check():
                       
                       
 if time < 20:
-    answer = input('Youve finally made it on campus... And with a few minutes left to spare! However, You start to feel a dark presence in the air. All of a sudden, Radagon from Elden Ring appears. Choose either magic, fire, lightning, or holy:')
-    if answer.lower() == 'magic':
-        print('You are able to defeat him.')
+    answer = input('You finally see the house in the distance... And with a few minutes left to spare! Walking in, you are met with 4 different colored doors. Choose either red, blue, green, or purple:')
+    if answer.lower() == 'blue':
+        print('You take a potion on the table and you start to feel faint.. oh no, you have been poisoned!')
         time -=15
         time_check()
-    elif answer.lower() == 'fire':
-        print('good choice! He seems to be weak to fire so you beat him quicker.')
+    elif answer.lower() == 'purple':
+        print('good choice! You see the potion, drink it, and everything goes back to normal.')
         time -=10
         time_check()
-    elif answer.lower() == 'lightning':
-        print('You are able to defeat him.')
+    elif answer.lower() == 'red':
+        print('You take the potion on the table... you start to feel nauseous but you turn back to normal size! very sick though...')
         time -=15
         time_check()
-    elif answer.lower() == 'holy':
-        print('Oh no! It seems as though he is resistant to holy!')
+    elif answer.lower() == 'green':
+        print('Oh no! There is no potion to be found in this room!')
         time -=20 
         time_check()
 
 if time > 20 and time < 60:
-    q41 = input('Scrappy finds himself walking in a canyon and see a plumber and little pink warrior fighting off aliens from a spaceship overlooking the canyon. They introduce themselve as Kirby and Mario and desire Scrappys help but they can only go with one of the warriors. Does Scrappy choose Mario or Kirby?(Mario/Kirby)')
+    q41 = input('Scrappy finds himself walking in a canyon and see a plumber and little pink warrior fighting off aliens from a spaceship overlooking the canyon. They introduce themselve as Kirby and Mario and desire Scrappys help but they can only go with one of the warriors. Does Scrappy choose Ma?(Mario/Kirby)')
     if q41.lower().startswith('mar'):
         q42 = input('The aliens have stolen the Big Owl Bus. Mario and Scrappy get on Go-Karts in a hot pursuit. Which Kart do you choose?')
         q43 = input("You hit an item box. What item do you receive?(flower, shell, blooper)")
