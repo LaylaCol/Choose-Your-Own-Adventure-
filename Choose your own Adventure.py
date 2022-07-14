@@ -2,15 +2,15 @@ name = input ("Type Your name: ")
 print(
 """                                                                                                                                               
        +--------------------------------------------------+        
-       |Welcome", name, "to this adventure                |      
+       |Welcome to an adventure game!                     |      
        |You are playing as Alice from Alice in Wonderland.|     
        |She needs to get back to her original size,       |      
        |but the mysterious cat says she needs to take a   |   
        |specific blue potion found in a house deep in the |  
        |woods. You have 100 minutes to take the correct   |  
-       |      potion or else she'll be stuck forever.     | 
-       |               Good Luck!                      |  
-       +-----------------------------------------------+ 
+       |potion or else she'll be stuck forever.           | 
+       |               Good Luck!                         |  
+       +--------------------------------------------------+ 
                                                            """)
 time = 100
 while True:
@@ -108,19 +108,19 @@ if time < 20:
         time_check()
 
 if time > 20 and time < 60:
-    q41 = input('Scrappy finds himself walking in a canyon and see a plumber and little pink warrior fighting off aliens from a spaceship overlooking the canyon. They introduce themselve as Kirby and Mario and desire Scrappys help but they can only go with one of the warriors. Does Scrappy choose Ma?(Mario/Kirby)')
-    if q41.lower().startswith('mar'):
-        q42 = input('The aliens have stolen the Big Owl Bus. Mario and Scrappy get on Go-Karts in a hot pursuit. Which Kart do you choose?')
-        q43 = input("You hit an item box. What item do you receive?(flower, shell, blooper)")
+    q41 = input('As Alice is walking along the path she bumps into twins. They introduce themselve as Tweedledee and Tweedledum and needs Alice to help them with something however Alice is only one person. Does Alice help Tweedledee or Tweedledum?(Dee/Dum)')
+    if q41.lower().startswith('dee'):
+        q42 = input('It was a trick! Tweedledee is actually a bad guy and Alice books it.')
+        q43 = input("The rabbit Alice was chasing earlier has come to your rescue and he randomly ask you to pick one of the three objects in his hands. What do you choose? (flower, a rusty nail, coin)")
         if q43 == 'flower':
             time -=25
-            print('The aliens throw a blue shell and it hits Mario busting two of his tires. Mario throws a fire flower and tells Scrappy to eat it imediately. Scrappy turns into Fire Scrappy and continues to chase the Owl Bus. Scrappy throws a fireball that burns the aliens on top of the bus. Scrappy retrives the Big Owl Bus.')
-        elif q43 == 'shell':
+            print('He tosses the flower on the ground and it shoots up a large living protector that spits out sleepy pollen gas at the twins chasing you.')
+        elif q43 == 'rusty nail':
             time -=30
-            print('Just your luck! its a blue shell! The aliens throw back a banana and it hits Mario spiraling his car out of control. You come to the rescue and throw the blue shell at the aliens, exploding them. Scrappy retrives the Big Owl Bus.')
-        elif q43 == 'blooper':
+            print('Just your luck! The rabbit throws the nail at Tweedledee and it hits him in the eye, giving you guys time to run.')
+        elif q43 == 'coin':
             time -=35
-            print('The aliens throw a blue shell and it hits Mario busting two of his tires. Mario activates the blooper, blinding the aliens. Nows your chance! You take back the Big Owl Bus and drive to campus.')
+            print('The throws the coin into the air and it turns into a disk. He gets you both on and you fly to the house with the potion.')
     else:
         time -=30
         print ('Kirby takes Scrappy on his star straight to the spaceship to potentially destroy it. Kirby fights off as many aliens as possible but is overwhelmed. Kirby throws a sword towards Scrappy and he catches it. Scrappy enters a room to find the greatest swordsman know as Meta Knight. They fight for awhile and Scrappy best Meta Knight. Scrappy soon finds the control room and finds the self destruct button. Scrappy and Kirby escape the spaceship with only seconds to spare.')
