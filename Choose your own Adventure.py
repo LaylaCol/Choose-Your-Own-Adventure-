@@ -114,7 +114,7 @@ if time > 20 and time < 60:
         q43 = input("The rabbit Alice was chasing earlier has come to your rescue and he randomly ask you to pick one of the three objects in his hands. What do you choose? (flower, a rusty nail, coin)")
         if q43 == 'flower':
             time -=25
-            print('He tosses the flower on the ground and it shoots up a large living protector that spits out sleepy pollen gas at the twins chasing you.')
+            print('He tosses the flower on the ground and it shoots up a large living protector that spits out sleepy pollen gas at the twin chasing you.')
         elif q43 == 'rusty nail':
             time -=30
             print('Just your luck! The rabbit throws the nail at Tweedledee and it hits him in the eye, giving you guys time to run.')
@@ -123,15 +123,15 @@ if time > 20 and time < 60:
             print('The throws the coin into the air and it turns into a disk. He gets you both on and you fly to the house with the potion.')
     else:
         time -=30
-        print ('Kirby takes Scrappy on his star straight to the spaceship to potentially destroy it. Kirby fights off as many aliens as possible but is overwhelmed. Kirby throws a sword towards Scrappy and he catches it. Scrappy enters a room to find the greatest swordsman know as Meta Knight. They fight for awhile and Scrappy best Meta Knight. Scrappy soon finds the control room and finds the self destruct button. Scrappy and Kirby escape the spaceship with only seconds to spare.')
+        print ('It was a trick! Tweedledum is actually a bad guy. The twin cases after Alice and she runs right into his trap. She steps on a leaf that was covering a button and suddenly a large cage drops around her.')
 if time > 60 and time < 80:
-    q69 = input('you are left in a dark forest alone with your thoguths. Do you walk further in the forest or turn back?(walk/turn)')
-    if q69.lower().startswith('w'):
+    q69 = input('Alice looks around at the bars in defeat. Do you scream for help or try to escape by squeezing through?(scream/try to escape)')
+    if q69.lower().startswith('s'):
         time -=35
-        print('Scrappy finds a women tending to her garden in the woods. She gestures you over and gives you apples since she can tell that he is tired. She has a cabin nearby and gives you a phone to call for help to leave the forest')
+        print('Alice screams for help. As the twin approaches her with a mischevious grin, she sees the rabbit she has been chasing this whole time. The rabbit manages to out speed the large twin and kick the cage down, allowing him and Alice to run to safety.')
     else:
         time -=40
-        print('you manage to get out of the forest and find the police')
+        print('you manage to escape through the bars due to how small you are and run to the house with the potion.')
 if time > 80:
     q81 = input('As you are running through the forest you trip over the portal gun and it fires a portal which you fall into. you sudenly find yourself in the marvels new your city. Do you walk towards avengers tower or the sanctum sanctorum?(Avengers Tower/Sanctum Sanctorum)')          
     if q81.lower().startswith('Ave'):         
