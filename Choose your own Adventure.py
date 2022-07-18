@@ -133,23 +133,23 @@ if time > 60 and time < 80:
         time -=40
         print('you manage to escape through the bars due to how small you are and run to the house with the potion.')
 if time > 80:
-    q81 = input('As you are running through the forest you trip over the portal gun and it fires a portal which you fall into. you sudenly find yourself in the marvels new your city. Do you walk towards avengers tower or the sanctum sanctorum?(Avengers Tower/Sanctum Sanctorum)')          
-    if q81.lower().startswith('Ave'):         
-        q82 = input('You find Captain America and Iron Man onlooking a giant army of symbiotes about to attack the city. Who dod you talk to?(iron/captain)')
-        if q82.lower.startswith('ir'):
-            q83 = input('Iron Man offers to give you one of his suits to help fight the symbiotes. which one do you choose?(7/15/39)')
-            if q83 == '7':
+    q81 = input('As you are running through the forest you come across a random table thats seated with strangers. A large man with a tall hat, a mouse, and an hare. Do you approach the table or search for a path around them to go unnoticed?(Approach the table/Search for different path)')          
+    if q81.lower().startswith('App'):         
+        q82 = input('The strangers give you a warm welcome. They introduce themselves as the Mad Hatter, Dormouse, and the March Hare. They insist you stay for their tea party. Do you stay or tell them youre on a time crunch?(stay/leave)')
+        if q82.lower.startswith('st'):
+            q83 = input('You figure you have time to spare and the tea smells irresistable so you stay. Who do you talk to first?(Hatter/Dormouse/Hare)')
+            if q83 == 'Hatter':
                 time-=40
                 print('Ahh a classic! good choice. Scrappy and Iron Man fight off the symbiotes threatning the city. Iron Man uses technology inspired by the space stone to send scrappy back to his world.')
-            elif q83 == '15':
+            elif q83 == 'Dormouse':
                 time -=45
                 print('That armor is useless against them! However, Scrappy and Iron Man fight off the symbiotes threatning the city. Iron Man uses technology inspired by the space stone to send scrappy back to his world.')
-            elif q83 == '39':
+            elif q83 == 'Hare':
                 time-=39
                 print('This armor has incredible cosmic strength! Scrappy and Iron Man fight off the symbiotes threatning the city EASILY. Iron Man uses technology inspired by the space stone to send scrappy back to his world.')
         else:
             time-=41
-            print('He looks at Scrappy and says that their is no time to waste and gives him a shield. Scrappy and Captain America fight off the symbiotes threatning the city. Captain America uses technology inspired by the space stone to send scrappy back to his world.')  
+            print('You tell them about your situation and they understand. As a matter of fact')  
     else:
         time-=40
         print('You find Doctor Strange and Wong seeing the symbiotes ooze through the city. Wong sees that Scrappy is strong and magically inclined and gives him a sling ring. Scrappy, Doctor Strange, and Wong all open up a huge portal that sends the symbiote army into the sun. Doctor Strange opens up a portal to send you back to you back to your world.') 
