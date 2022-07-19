@@ -140,16 +140,16 @@ if time > 80:
             q83 = input('You figure you have time to spare and the tea smells irresistable so you stay. Who do you talk to first?(Hatter/Dormouse/Hare)')
             if q83 == 'Hatter':
                 time-=40
-                print('Ahh a classic! good choice. Scrappy and Iron Man fight off the symbiotes threatning the city. Iron Man uses technology inspired by the space stone to send scrappy back to his world.')
+                print('You can tell he is the host of the party from the way he talks to the others. You enjoy the tea and cookies while telling him about your situation. He sympathizes with you and actually helps you by sending you flying in the direction of the house on his large hat.')
             elif q83 == 'Dormouse':
                 time -=45
-                print('That armor is useless against them! However, Scrappy and Iron Man fight off the symbiotes threatning the city. Iron Man uses technology inspired by the space stone to send scrappy back to his world.')
+                print('The little mouse humors you your whole time there but once you get serious and tell him about your situation he gets serious. He gathers his other mouse friends and they dig you a shortcut to the house.')
             elif q83 == 'Hare':
                 time-=39
-                print('This armor has incredible cosmic strength! Scrappy and Iron Man fight off the symbiotes threatning the city EASILY. Iron Man uses technology inspired by the space stone to send scrappy back to his world.')
+                print('The Hare was quiet the whole time but once you tell him about your situation he gets anxious. He tells the Mad Hatter and they plot something to help you reach the house.')
         else:
             time-=41
-            print('You tell them about your situation and they understand. As a matter of fact')  
+            print('You tell them about your situation and they understand. However, they are serious about their tea party so they dont do anything to help. So you just continue on your way to the house.')  
     else:
         time-=40
-        print('You find Doctor Strange and Wong seeing the symbiotes ooze through the city. Wong sees that Scrappy is strong and magically inclined and gives him a sling ring. Scrappy, Doctor Strange, and Wong all open up a huge portal that sends the symbiote army into the sun. Doctor Strange opens up a portal to send you back to you back to your world.') 
+        print('You sneak around the table as they communicate with one another. You manage to find another path and make your way to the house!') 
